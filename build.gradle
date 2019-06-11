@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+
+dependencies {
+	// dependencies for development time
+ 	implementation 'ai.libs:mlplan:0.1.2'
+}
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+	maven { url "https://jitpack.io" }
+	maven { url "http://clojars.org/repo/" }
+	maven { url "https://plugins.gradle.org/m2/" }
+	maven { url "https://nexus.cs.upb.de/repository/maven-releases/" }
+}
