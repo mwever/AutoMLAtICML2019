@@ -3,15 +3,6 @@ plugins {
 	id 'eclipse'
 }
 
-sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-    }
-}
-
-
 dependencies {
 	// dependencies for development time
  	implementation 'ai.libs:mlplan:0.1.2'
